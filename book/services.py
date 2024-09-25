@@ -19,4 +19,11 @@ libro3 = {
     'imagen': 'houseofleaves.jpg'
 }
 
-libros = [libro1, libro2, libro3]
+libro4 = {
+    'titulo': 'Camposanto',
+    'autor': 'Iker Jimenez',
+    'precio': 6000,
+    'imagen': 'camposanto.jpg'
+}
+
+libros = [libro1, libro2, libro3, libro4]

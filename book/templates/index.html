@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
 Inicio
 {% endblock %}
 
 {% block content %}
 
-<h2 class="text-center">Bienvenidos a Librería de Alexandria</h2>
+<h2 class="text-center" style="margin-top: 2%;">Bienvenidos a Biblioteca de Alexandria</h2>
+
+<img src="{% static 'img/libros_index.png' %}" class="libros_index">
 
 {% endblock %}
