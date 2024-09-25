@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Lista de Libros
+{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center">Listado de Libros</h2>
+
+<div class="row">
+    {% for item in libros %}
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.titulo }}</h5>
+                <p class="card-text">Autor: {{ item.autor }}</p>
+                <p class="card-text">Precio: ${{ item.precio }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
