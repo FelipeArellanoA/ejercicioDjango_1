@@ -15,3 +15,4 @@ def lista_libros(request):
         'libros': libros
     }
     return render(request, 'lista_libros.html', context)
+

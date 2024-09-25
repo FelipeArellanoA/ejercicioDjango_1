@@ -1,19 +1,23 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+
 {% block title %}
 Lista de Libros
 {% endblock %}
 
 {% block content %}
 
-<h2 class="text-center">Listado de Libros</h2>
+<h2 class="text-center text-titulo">Listado de Libros</h2>
 
-<div class="row">
+<div class="row card-general">
     {% for item in libros %}
     <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
                 <h5 class="card-title">{{ item.titulo }}</h5>
+                <img src="{% static 'img/' %}{{ item.imagen }}" class="card-img-top imagen-libro" alt="{{ item.titulo }}">
                 <p class="card-text">Autor: {{ item.autor }}</p>
                 <p class="card-text">Precio: ${{ item.precio }}</p>
             </div>
